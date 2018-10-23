@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container admin-box">
+    <div class="container client-box">
         <div class="row">
             <div class="chat-box">
                 <div class="col-sm-7 chat-container chat-container-left">

@@ -21,3 +21,13 @@ require('./bootstrap');
 // const app = new Vue({
 //     el: '#app'
 // });
+
+$(document).ready(() => {
+    require('./components/global');
+    if ($('.admin-box').length > 0) {
+        require('./components/admin');
+    }
+    if ($('.client-box').length > 0) {
+        require('./components/client');
+    }
+});

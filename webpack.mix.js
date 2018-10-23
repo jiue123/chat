@@ -11,7 +11,15 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.autoload({
+mix.webpackConfig({
+        node: {
+            fs: "empty",
+        },
+        externals: {
+            uws: "uws"
+        }
+    })
+    .autoload({
     jquery: ['$', 'window.jQuery', 'jQuery', 'window.$'],
     })
    .js('resources/assets/js/app.js', 'public/js')

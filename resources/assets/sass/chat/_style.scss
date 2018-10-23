@@ -1,9 +1,12 @@
+.app {
+  background-color: #ffffff;
+}
+
 .container {
   .chat-box {
     background: #E9EEF2;
     display: flow-root;
     padding: 20px;
-    height: 70vh;
     overflow: auto;
     .chat-container {
       background-color: #ffffff;
@@ -33,6 +36,12 @@
     .chat-container-right {
       border-left: 3px solid #ff8080;
       float: right;
+    }
+  }
+  .wrapper-editor {
+    margin-top: 5px;
+    textarea {
+      padding: 10px;
     }
   }
 }

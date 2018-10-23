@@ -25,3 +25,10 @@ Route::group([
 ], function() {
     Route::resource('chat', 'ChatController');
 });
+
+Route::group([
+    'prefix' => 'client',
+    'as' => 'client.',
+], function() {
+    Route::resource('client', 'ClientController');
+});

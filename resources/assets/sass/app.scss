@@ -6,7 +6,9 @@
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+// Bootstrap Markdown
+@import "~bootstrap-markdown/css/bootstrap-markdown.min.css";
 
 // Style
 @import
