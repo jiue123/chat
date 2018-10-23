@@ -1,0 +1,47 @@
+.app {
+  background-color: #ffffff;
+}
+
+.container {
+  .chat-box {
+    background: #E9EEF2;
+    display: flow-root;
+    padding: 20px;
+    overflow: auto;
+    .chat-container {
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      border: 2px solid #f0f0f5;
+      margin-bottom: 15px;
+      .chat-body {
+        padding: 1.25rem;
+        .avatar {
+          position: absolute;
+          right: 0;
+          bottom: 2px;
+          padding-left: 0;
+          padding-right: 5px;
+          img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: 2px solid #F7F9FA;
+          }
+        }
+      }
+    }
+    .chat-container-left {
+      border-left: 3px solid #00ffbf;
+    }
+    .chat-container-right {
+      border-left: 3px solid #ff8080;
+      float: right;
+    }
+  }
+  .wrapper-editor {
+    margin-top: 5px;
+    textarea {
+      padding: 10px;
+    }
+  }
+}
