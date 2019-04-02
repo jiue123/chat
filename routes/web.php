@@ -20,10 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group([
-    'prefix' => 'admin',
-    'as' => 'admin.',
+    'as' => 'chat.',
 ], function() {
     Route::resource('chat', 'ChatController');
+    Route::post('getInfoUserOnline', 'ChatController@getInfoUserOnline');
 });
 
 Route::group([

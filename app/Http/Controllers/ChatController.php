@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class ChatController extends Controller
@@ -80,5 +81,12 @@ class ChatController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getInfoUserOnline(Request $request)
+    {
+        $arrUserInfo = User::whereIn('email', $request->input())->get();
+
+        return $arrUserInfo;
     }
 }

@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -73,7 +73,9 @@
 
         @yield('content')
     </div>
-
+    <script>
+        var userEmailGlobal = "{{ !empty(Auth::user()->email) ? Auth::user()->email : null }}";
+    </script>
     <!-- Scripts -->
     <script src="{{ mix('js/manifest.js') }}"></script>
     <script src="{{ mix('js/vendor.js') }}"></script>

@@ -13,8 +13,13 @@
       border-radius: 0.5rem;
       border: 2px solid #f0f0f5;
       margin-bottom: 15px;
+      padding: 0;
       .chat-body {
-        padding: 1.25rem;
+        .message {
+          p {
+            margin-bottom: 0;
+          }
+        }
         .avatar {
           position: absolute;
           right: 0;
@@ -42,6 +47,44 @@
     margin-top: 5px;
     textarea {
       padding: 10px;
+    }
+  }
+  .dropdowns-user-online {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background-color: #ffffff;
+    width: 300px;
+    padding: 0;
+    .header {
+      background-color: #337ab7;
+      cursor: pointer;
+      padding-top: 4px;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      span {
+        color: #ffffff;
+      }
+    }
+    .list-user-online {
+      max-height: 350px;
+      overflow: auto;
+      border: 1px solid #e1e1e8;
+      border-top: 0;
+      ul {
+        li {
+          cursor: pointer;
+          margin-bottom: 5px;
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            border: 2px solid #F7F9FA;
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
     }
   }
 }

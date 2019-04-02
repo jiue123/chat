@@ -4,7 +4,7 @@
     <div class="container admin-box">
         <div class="row">
             <div class="chat-box">
-                <div class="col-sm-7 chat-container chat-container-left">
+                <div class="col-sm-7 col-xs-7 chat-container chat-container-left">
                     <div class="chat-body">
                         <div class="message col-md-10">
                             <p>Hi!</p>
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-7 chat-container chat-container-right">
+                <div class="col-sm-7 col-xs-7 chat-container chat-container-right">
                     <div class="chat-body">
                         <div class="message col-md-10">
                             <p>Hi!</p>
@@ -29,6 +29,15 @@
             </div>
             <div class="wrapper-editor">
                 <textarea name="text" id="myEditor"></textarea>
+            </div>
+            <div class="col-md-4 dropdowns-user-online">
+                <div class="col-md-12 header">
+                    <span>All user</span>
+                </div>
+                <div class="col-md-12 list-user-online">
+                    <ul class="list-unstyled">
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

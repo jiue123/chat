@@ -19,4 +19,6 @@ $(window).resize(function () {
     $chatBoxH();
 });
 
-
+$(document).on('click', '.dropdowns-user-online .header', (e) => {
+    $('.dropdowns-user-online .list-user-online').toggle();
+});
